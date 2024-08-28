@@ -1,0 +1,425 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website using the html css js</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn -->
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <!-- to move the container from the margin to display 
+        it to the center -->
+
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-img">
+            <img src="images/logo.png" alt="NO" width="125px" />
+          </div>
+
+          <nav>
+            <ul id="toggele">
+              <li><a href="#">Home</a></li>
+              <li><a href="product.html" target="_blank">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html" target="_blank"
+            ><img src="images/cart.png" alt="" width="30px" height="30px"
+          /></a>
+
+          <img src="images/menu.png" class="menu-icon" onclick="showmenu()" />
+        </div>
+
+        <!-- the row div set to the display flex in global -->
+
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Give your Workout <br />
+              New Style
+            </h1>
+            <p>
+              Sucess isnt always about greatness. It about consistency<br />
+              Hard work gains success. Greatness will come.
+            </p>
+            <a href="#" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/image1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  categories section -->
+
+    <section class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3"><img src="images/category-1.jpg" alt="" /></div>
+          <div class="col-3"><img src="images/category-2.jpg" alt="" /></div>
+          <div class="col-3"><img src="images/category-3.jpg" alt="" /></div>
+          <div class="col-3"></div>
+        </div>
+
+        <!--+++++ Featured products ++++++++++-->
+
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+          <div class="col-4">
+            <a href="productdetails.html">
+            <img src="images/product-1.jpg" /></a>
+            <h4>Red Printed T-shirt</h4>
+
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-2.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-3.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <!---->
+            </div>
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-4.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+        </div>
+
+        <!-- latest products -->
+
+        <h2 class="title">Latest Product</h2>
+
+        <div class="row">
+          <!-- product image from the 4 to 8 -->
+          <div class="col-4">
+            <img src="images/product-5.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <!-- <i class="bi bi-star-half"></i> -->
+            </div>
+            <p>$50.0</p>
+          </div>
+
+          <div class="col-4">
+            <img src="images/product-6.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+
+          <div class="col-4">
+            <img src="images/product-7.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <!---->
+            </div>
+            <p>$50.0</p>
+          </div>
+
+          <div class="col-4">
+            <img src="images/product-8.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+        </div>
+
+        <!-- product images from the 9 to 12 -->
+
+        <div class="row">
+          <div class="col-4">
+            <img src="images/product-9.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <!-- <i class="bi bi-star-half"></i> -->
+            </div>
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-10.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-11.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <!---->
+            </div>
+            <p>$50.0</p>
+          </div>
+          <div class="col-4">
+            <img src="images/product-12.jpg" />
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>$50.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--++++++    offer  +++++-->
+
+    <section class="offer">
+      <!-- it is used to have the container in center -->
+      <div class="small-container">
+        <!-- row class is used to have item in fles -->
+        <div class="row">
+          <!-- flex basis is used in the col-2 classes -->
+          <div class="col-2">
+            <img src="images/exclusive.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Exculise Avaliable on the RedStore</p>
+            <h1>Smart Band</h1>
+            <p>
+              The magnificent large AMOLED display debuts on your wrist, making
+              it easy for you to read and control. Everything is presented in
+              detail at high resolution. Even better, thanks to always-on mode,
+              you can read date and time without lifting your wrist or using
+              your fingers.
+            </p>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------- testimonials --------------->
+
+    <section class="testimonials">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="bi bi-chat-square-quote"></i>
+            <p class="testimonials-p">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+              perferendis dignissimos.error quia
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <img src="images/user-1.png" />
+            <h3>Emilly Yells</h3>
+          </div>
+
+          <div class="col-3">
+            <i class="bi bi-chat-square-quote"></i>
+            <p class="testimonials-p">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+              perferendis dignissimos.error quia
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <img src="images/user-2.png" />
+            <h3>Joseph Anand</h3>
+          </div>
+
+          <div class="col-3">
+            <i class="bi bi-chat-square-quote"></i>
+            <p class="testimonials-p">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+              perferendis dignissimos.error quia
+            </p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <img src="images/user-3.png" />
+            <h3>Rachel Anariays</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------- brands ---------------->
+
+    <section class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-coca-cola.png" alt="" />
+          </div>
+          <div class="col-5"><img src="images/logo-godrej.png" alt="" /></div>
+          <div class="col-5"><img src="images/logo-oppo.png" alt="" /></div>
+          <div class="col-5"><img src="images/logo-paypal.png" alt="" /></div>
+          <div class="col-5"><img src="images/logo-philips.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!------------footer------------- -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our app</h3>
+            <p>Android on Play Store and ios on App store</p>
+            <div class="app-logo-img">
+              <!-- the total div is set to the flex basis 
+          30% as 100% width -->
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="" />
+            <p>
+              Our Purpose is give a Good interface <br />to the Customer and
+              keep Them satisfying.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>BLog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliates</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="footer-p">Copyright-2023 WorldWide Market</p>
+      </div>
+    </section>
+
+    <!-- script for the menu icon -->
+    <script>
+      var menuitem = document.getElementById("toggele");
+      menuitem.style.maxHeight = "0px";
+
+      function showmenu() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "220px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

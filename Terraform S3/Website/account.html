@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn -->
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- to move the container from the margin to display 
+        it to the center -->
+    <section class="container">
+      <div class="navbar">
+        <div class="logo-img">
+          <img src="images/logo.png" alt="NO" width="125px" />
+        </div>
+
+        <nav>
+          <ul id="toggele">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="product.html" target="_blank">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+
+        <a href="cart.html" target="_blank"
+          ><img src="images/cart.png" alt="" width="30px" height="30px"
+        /></a>
+
+        <img src="images/menu.png" class="menu-icon" onclick="showmenu()" />
+      </div>
+
+      <!-- the row div set to the display flex in global -->
+    </section>
+
+    <!-- -----------account-page------------- -->
+
+    <section class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2"><img src="images/image1.png" width="100%" /></div>
+          <div class="col-2">
+            <!-- form container -->
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()" > Login</span>
+                <span onclick="reg()" > Register</span>
+                <hr id="indicator" />
+              </div>
+
+              <!--  Login form -->
+              <form id="loginform">
+                <input type="text" placeholder="Enter Your Username" />
+                <input type="password" placeholder="Enter Your Password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot Password</a>
+              </form>
+
+              <!-- register form -->
+              <form id="regform">
+                <input type="text" placeholder="Enter Your Username" />
+                <input type="email" placeholder="Enter Your Email" />
+                <input type="password" placeholder="Enter Your Password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------footer------------- -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our app</h3>
+            <p>Android on Play Store and ios on App store</p>
+            <div class="app-logo-img">
+              <!-- the total div is set to the flex basis 
+          30% as 100% width -->
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="" />
+            <p>
+              Our Purpose is give a Good interface <br />to the Customer and
+              keep Them satisfying.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>BLog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliates</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="footer-p">Copyright-2023 WorldWide Market</p>
+      </div>
+    </section>
+
+    <!-- script for the menu icon -->
+    <script>
+      var menuitem = document.getElementById("toggele");
+      menuitem.style.maxHeight = "0px";
+
+      function showmenu() {
+        if (menuitem.style.maxHeight == "0px") {
+          menuitem.style.maxHeight = "220px";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+
+
+
+    <!----- script for the login and 
+        registration form  -------->
+
+        <script>
+            var loginform =document.getElementById('loginform')
+            var regform = document.getElementById('regform')
+            var indicator = document.getElementById('indicator')
+
+
+
+// important one is default position in css styling
+            
+
+            function login(){
+
+                // to move from the right into the form
+                loginform.style.transform = "translateX(300px)";
+                
+
+                // to move from form to the out of form on the right
+                regform.style.transform = "translateX(300px)";
+
+
+                // it is moving from the left 0 towards right 50px
+                indicator.style.transform = "translateX(40px)"
+            }
+
+
+            function reg(){
+
+                // default style(-300px) that has move out of the box left
+                loginform.style.transform = "translateX(0px)";
+
+                // default style move in to the box from the left to form
+                regform.style.transform = "translateX(0px)";
+
+                // from left 0 to right 150px 
+                indicator.style.transform="translate(150px)"
+
+            }   
+
+        </script>
+  </body>
+</html>

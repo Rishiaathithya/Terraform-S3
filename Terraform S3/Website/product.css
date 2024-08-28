@@ -1,0 +1,122 @@
+.row-2{
+    justify-content: space-between;
+    margin:100px auto 50px;
+}
+select {
+    border:1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline:none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    border: 1px solid #ff523b;
+    display: inline-block;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+
+.thaani .col-4{
+    box-shadow: 0px 0px 10px 0px #ff523b;
+    margin-left: 2px;
+    flex-basis: 23%;
+}
+
+@media only screen and (max-width:600px){
+    .col-4{
+        flex-basis: 100%;
+    }
+
+}
+
+
+/*------------single porduct  -------------*/
+
+.single-product{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0 ;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select {
+    /* the space inside the select box in a single line */
+    padding: 10px;
+    /* box in a single line */
+    display: block;
+    margin-top: 20px;
+
+}
+
+.single-product input{
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 12px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+/* when the input is foused the original border of input 
+is came after this only it disappear */
+
+
+input:focus{
+    outline: none;
+}
+
+.single-product  h3 .bi{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px){
+
+
+    .single-product .col-2 h1{
+        padding: 20px 0;
+        text-align: left;
+    }
+    .footer .container{
+        flex-basis: 100%;
+    }
+
+}
+
